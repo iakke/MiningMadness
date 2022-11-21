@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model":  "miningmadness:block/basic_miner"}
+  }
+}
