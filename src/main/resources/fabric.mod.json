@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "miningmadness",
+  "version": "${version}",
+
+  "name": "Mining Madness",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "ChamoisEST"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.chamoisest.miningmadness.MiningMadness"
+    ],
+    "client": [
+      "net.chamoisest.miningmadness.MiningMadnessClient"
+    ]
+  },
+  "mixins": [
+    "miningmadness.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
